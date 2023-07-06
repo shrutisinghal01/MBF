@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link rel = "stylesheet" type = "text/css" href= "../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Blast-Furnance</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="../js/charts.js"></script>
+    <script type="text/javascript" src="../js/data.js"></script>
+    <script type="text/javascript" src="../js/stv.js"></script>
+</head>
+<body onload="Load()">
+    <img src="../Tata_logo.svg.png" class="tata">
+    <nav>
+        
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Models</a></li>
+                <li><a href="#">Alarms</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+    </nav>
+    <div class="main-container">
+
+
+
+
+        <!-- Health-Monitor -->
+        <div class="Health-Monitor">
+            <div class="Fuel-Rate-Trend">
+                <div id="curve_chart"></div>
+            </div>
+            <p>Health Monitor</p>
+        </div>
+        <!-- Health-Monitor -->
+
+
+
+
+        <!-- Blast-Furnance -->
+        <div class="Blast-Furnance-section">
+            <button class="Health-Monitor-button">1</button>
+            <button class="Heat-Loss-Monitor-button" onclick="flux()">2</button>
+            <button class="Stove-Optimization-button" onclick="Stove()">3</button>
+            <button class="RIST-CDRR-Model-button" onclick="suggest()">4</button>
+            <button class="Water-Ingress-model-button" onclick="Ingress()">5</button>
+        </div>
+        <!-- Blast-Furnance -->
+
+        <!-- heat-loss-monitor -->
+        <div class="Heat-Loss-Monitor">
+            <table>
+                <tr>
+                    <td class="heading" colspan="6">
+                        <h2>Heat Flux Intensity</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>S4</td>
+                    <td id="r1-1">78</td>
+                    <td id="r1-2">121</td>
+                    <td id="r1-3">64</td>
+                    <td id="r1-4">284</td>
+                    <td id="r1-5">5</td>
+                </tr>
+                <tr>
+                    <td>S3</td>
+                    <td id="r2-1">0</td>
+                    <td id="r2-2">35</td>
+                    <td id="r2-3">-152</td>
+                    <td id="r2-4">24</td>
+                    <td id="r2-5">78</td>
+                </tr>
+                <tr>
+                    <td>S2</td>
+                    <td id="r3-1">0</td>
+                    <td id="r3-2">24</td>
+                    <td id="r3-3">0</td>
+                    <td id="r3-4">142</td>
+                    <td id="r3-5">0</td>
+                </tr>
+                <tr>
+                    <td>S1</td>
+                    <td id="r4-1">0</td>
+                    <td id="r4-2">-97</td>
+                    <td id="r4-3">0</td>
+                    <td id="r4-4">78</td>
+                    <td id="r4-5">0</td>
+                </tr>
+                <tr>
+                    <td>B2</td>
+                    <td id="r5-1">1</td>
+                    <td id="r5-2">78</td>
+                    <td id="r5-3">1</td>
+                    <td id="r5-4">64</td>
+                    <td id="r5-5">90</td>
+                </tr>
+                <tr>
+                    <td>B1</td>
+                    <td id="r6-1">107</td>
+                    <td id="r6-2">68</td>
+                    <td id="r6-3">45</td>
+                    <td id="r6-4">46</td>
+                    <td id="r6-5">115</td>
+                </tr>
+            </table>
+            <p>Heat Loss Monitor</p>
+        </div>
+        <!-- heat-loss-monitor -->
+
+
+
+        <!-- Water-Ingress-model -->
+        <div class="Water-Ingress-model">
+            <div id="classification-container">
+                <div class="normal-container">
+                    <h4>NORMAL</h4>
+                </div>
+                <div class="abnormal-container">
+                    <h4>ABNORMAL</h4>
+                </div>
+                <div class="closed-container">
+                    <h4>CLOSED</h4>
+                </div>
+            </div>
+            <div id="furnance-parts-container">
+                <div class="a b1"></div>
+                <div class="a b2"></div>
+                <div class="a b3"></div>
+                <div class="a b4"></div>
+                <div class="a b5"></div>
+                <div class="a b6"></div>
+                <div class="a b7"></div>
+                <div class="a b8"></div>
+                <div class="a b9"></div>
+                <div class="a b10"></div>
+                <div class="a b11"></div>
+                <div class="a b12"></div>
+                <div class="a b13"></div>
+                <div class="a b14"></div>
+                <div class="a b15"></div>
+                <div class="a b16"></div>
+                <div class="a b17"></div>
+                <div class="a b18"></div>
+                <div class="a b19"></div>
+                <div class="a b20"></div>
+                <div class="a b21"></div>
+                <div class="a b22"></div>
+                <div class="a b23"></div>
+                <div class="a b24"></div>
+            </div>
+            <p>Water Ingress Model</p>
+        </div>
+        <!-- Water-Ingress-model -->
+
+
+
+
+
+        <!-- RIST-CDRR-Model -->
+        <div class="RIST-CDRR-Model">
+            <div id="Suggestions-container">
+                <h2>SUGGESTIONS</h2>
+            </div>
+            <div id="Comment-container">
+                <div id="Comments">
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                </div>
+                <div id="accept-reject-container">
+                    <button class="Accept-button">Accept</button>
+                    <button class="Reject-button">Reject</button>
+                </div>
+            </div>
+            <p>RIST CDRR Model</p>
+        </div>
+        <!-- RIST-CDRR-Model -->
+
+
+
+        <!-- Stove-Optimization -->
+        <div class="Stove-Optimization">
+            <div id="Top-Stove">
+                <div class="stove-container">
+                    <div class="stove"><h2>Stove 1</h2></div>
+                    <div class="HBT"><h2>HBT : <strong></strong></h2></div>
+                    <div class="status"><h2></h2></div>
+                </div>
+            </div>
+            <div id="Middle-Stove">
+                <div class="stove-container">
+                    <div class="stove"><h2>Stove 2</h2></div>
+                    <div class="HBT"><h2>HBT : <strong></strong></h2></div>
+                    <div class="status"><h2></h2></div>
+                </div>
+            </div>
+            <div id="Bottom-Stove">
+                <div class="stove-container">
+                    <div class="stove"><h2>Stove 3</h2></div>
+                    <div class="HBT"><h2>HBT : <strong></strong> </h2></div>
+                    <div class="status"><h2></h2></div>
+                </div>
+            </div>
+            <p class="name">Stove Optimization</p>
+        </div>
+        <!-- Stove-Optimization -->
+
+
+
+        <!-- <div class="alerts">
+            
+        </div> -->
+    </div>
+</body>
+</html>

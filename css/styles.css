@@ -1,0 +1,707 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size : 16px;
+}
+p,h4,h2{
+    margin: 0;
+    text-align:center;
+}
+*,*:after,*:before{
+    box-sizing:inherit ;
+}
+.main-container{
+    height: 1300px;
+    width: 100%;
+    padding: 30px;
+}
+body{
+    margin: 0;
+}
+
+/* nav */
+.tata{
+    position: absolute;
+    width: 7%;
+    height: 10%;
+    z-index: 2;
+    top: 2%;
+    left: 2%;
+    float: left;
+}
+nav{
+    position: absolute;
+    top: 0;
+    background-color: black; 
+    height: 15%;
+    width: 100%;
+}
+nav ul{
+    text-align: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+/* nav */
+
+
+
+
+
+
+
+
+/* .Health-Monitor */
+.Health-Monitor{
+    width: 33%;
+    height: 40%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 12%;
+}
+.Fuel-Rate-Trend{
+    width: 100%;
+    height: 80%;
+    border: 2px solid black;
+    border-radius: 8px;
+    /* overflow: hidden; */
+}
+.Health-Monitor > p{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 3%;
+}
+#curve_chart{
+    width: 100%;
+    height: 100%;
+}
+/* .Health-Monitor */
+
+
+
+
+
+
+
+
+
+/* .Blast-Furnance-section */
+.Blast-Furnance-section{
+    background: url(../images/Schematic-diagram-of-the-blast-furnace-process.png); 
+    height: 50%;
+    width: 30%;
+    display:inline-block;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 75%;
+    position: relative;
+    left: 2%;
+}
+.Blast-Furnance-section > button{
+    border-radius: 25px;
+    padding: 1% 2% 1% 2%;
+    background-color: #7AA874;
+    border: none;
+    position: absolute;
+}
+.Health-Monitor-button{
+    top: 43%;
+    left: 37%;
+}
+.Heat-Loss-Monitor-button{
+    top: 43%;
+    right: 41%;
+}
+.Stove-Optimization-button{
+    bottom: 25%;
+    right: 36%;
+}
+.RIST-CDRR-Model-button{
+    bottom: 8%;
+    right: 50%;
+}
+.Water-Ingress-model-button{
+    bottom: 25%;
+    left: 33%;
+}
+/* .Blast-Furnance-section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .Heat-Loss-Monitor */
+.Heat-Loss-Monitor{
+    width: 33%;
+    height: 25%;
+    display: inline-block;
+    vertical-align: top;
+    position:relative;
+    top: 12%;
+    left: 4%;
+}
+.Heat-Loss-Monitor > p{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 5%;
+}
+table{
+    width: 100%;
+    background-color: #FFB84C;
+}
+table,tr,td{
+    border: 1px solid black;
+    border-radius: 7px;
+    text-align: center;
+}
+td{
+    width: 17.5%;
+    background-color: #FFF4F4;
+}
+tr{
+    height: 30px;
+}
+.heading > h2{
+    text-align: left;
+    padding-left: 5%;
+}
+#r1-1{
+    background-color: #ADE792;
+}
+#r1-2{
+    background-color: #ADE792;
+}
+#r1-3{
+    background-color: #ADE792;
+}
+#r1-4{
+    background-color: #ADE792;
+}
+#r1-5{
+    background-color: #F24C3D;
+}
+#r2-1{
+    background-color: #F24C3D;
+}
+#r2-2{
+    background-color: #ADE792;
+}
+#r2-3{
+    background-color: #FEFF86;
+}
+#r2-4{
+    background-color: #ADE792;
+}
+#r2-5{
+    background-color: #ADE792;
+}
+#r3-1{
+    background-color: #F24C3D;
+}
+#r3-2{
+    background-color: #ADE792;
+}
+#r3-3{
+    background-color: #F24C3D;
+}
+#r3-4{
+    background-color: #ADE792;
+}
+#r3-5{
+    background-color: #F24C3D;
+}
+#r4-1{
+    background-color: #F24C3D;
+}
+#r4-2{
+    background-color: #FEFF86;
+}
+#r4-3{
+    background-color: #F24C3D;
+}
+#r4-4{
+    background-color: #ADE792;
+}
+#r4-5{
+    background-color: #F24C3D;
+}
+#r5-1{
+    background-color: #F24C3D;
+}
+#r5-2{
+    background-color: #ADE792;
+}
+#r5-3{
+    background-color: #F24C3D;
+}
+#r5-4{
+    background-color: #ADE792;
+}
+#r5-5{
+    background-color: #ADE792;
+}
+#r6-1{
+    background-color: #ADE792;
+}
+#r6-2{
+    background-color: #ADE792;
+}
+#r6-3{
+    background-color: #ADE792;
+}
+#r6-4{
+    background-color: #ADE792;
+}
+#r6-5{
+    background-color: #ADE792;
+}
+/* .Heat-Loss-Monitor */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .Water-Ingress-model */
+.Water-Ingress-model{
+    width: 33%;
+    height: 40%;
+    display: inline-block;
+    position: relative;
+    top: -5%;
+}
+#classification-container{
+    width: 100%;
+    height: 15%;
+    border : 2px solid black;
+    background-color:#FFE4A7;
+    text-align: center;
+    border-radius : 8px;
+}
+#furnance-parts-container{
+    width: 100%;
+    height: 78%;
+    border: 2px solid black;
+    position: relative;
+    border-radius: 8px;
+    background-color: #FFE4A7;
+}
+.normal-container{
+    width: 25%;
+    height: auto;
+    background-color: #ADE792;
+    padding: 1%;
+    display: inline-block;
+    position: relative;
+    top: 25%;
+    right: 4%;
+    border-radius: 8px;
+}
+.abnormal-container{
+    width: 25%;
+    height: auto;
+    background-color: #F24C3D;
+    padding: 1%;
+    display: inline-block;
+    position: relative;
+    top: 25%;
+    border-radius: 8px;
+}
+.closed-container{
+    width: 25%;
+    height: auto;
+    background-color: #090580;
+    padding: 1%;
+    display: inline-block;
+    position: relative;
+    top: 25%;
+    left: 4%;
+    border-radius: 8px;
+}
+.Water-Ingress-model > p{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 2.1%;
+}
+.normal-container > h4{
+    color: white;
+}
+.abnormal-container > h4{
+    color: white;
+}
+.closed-container{
+    color: white;
+}
+.a{
+    width: 6%;
+    height: 7%;
+    display: inline-block;
+    background-color: #F5F5F5;
+    position: absolute;
+    border-radius: 5px;
+}
+.b1{
+    top: 50%;
+    left: 5%;
+    border: 5px solid #ADE792;
+}
+.b2{
+    top : 30%;
+    left: 10%;
+    border: 5px solid #ADE792;
+}
+.b3{
+    top: 15%;
+    left: 25%;
+    border: 5px solid #ADE792;
+}
+.b4{
+    top: 5%;
+    left: 45%;
+    border: 5px solid #ADE792;
+}
+.b5{
+    top: 15%;
+    right: 25%;
+    border: 5px solid #ADE792;
+}
+.b6{
+    top: 30%;
+    right: 10%;
+    border: 5px solid #ADE792;
+}
+.b7{
+    top: 50%;
+    right: 5%;
+    border: 5px solid #ADE792;
+}
+.b8{
+    bottom: 25%;
+    right: 10%;
+    border: 5px solid #ADE792;
+}
+.b9{
+    bottom: 10%;
+    right: 25%;
+    border: 5px solid #ADE792;
+}
+.b10{
+    bottom: 5%;
+    right: 50%;
+    border: 5px solid #ADE792;
+}
+.b11{
+    bottom: 10%;
+    left: 25%;
+    border: 5px solid #ADE792;
+}
+.b12{
+    bottom: 25%;
+    left: 10%;
+    border: 5px solid #ADE792;
+}
+.b13{
+    top: 50%;
+    left: 17%;
+    border: 5px solid #ADE792;
+}
+.b14{
+    top: 33%;
+    left: 22%;
+    border: 5px solid #090580;
+}
+.b15{
+    top: 24%;
+    left: 33%;
+    border: 5px solid #ADE792;
+}
+.b16{
+    top: 18%;
+    left: 45%;
+    border: 5px solid #ADE792;
+}
+.b17{
+    top: 24%;
+    right: 33%;
+    border: 5px solid #ADE792;
+}
+.b18{
+    top: 33%;
+    right: 22%;
+    border: 5px solid #F24C3D;
+}
+.b19{
+    top: 50%;
+    right: 17%;
+    border: 5px solid #ADE792;
+}
+.b20{
+    bottom: 29%;
+    right: 22%;
+    border: 5px solid #090580;
+}
+.b21{
+    bottom: 20%;
+    right: 33%;
+    border: 5px solid #090580;
+}
+.b22{
+    bottom: 14%;
+    right: 50%;
+    border: 5px solid #ADE792;
+}
+.b23{
+    bottom: 20%;
+    left: 32%;
+    border: 5px solid #090580;
+}
+.b24{
+    bottom: 29%;
+    left: 22%;
+    border: 5px solid #ADE792;
+}
+/* .Water-Ingress-model */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RIST-CDRR-Model */
+.RIST-CDRR-Model{
+    width: 30%;
+    height: 30%;
+    display: inline-block;
+    position: relative;
+    top: -5%;
+    left: 2%;
+}
+#Suggestions-container{
+    width: 100%;
+    height: 20%;
+    border: 2px solid black;
+    background-color: #3a7acd;
+    border-radius: 8px;
+}
+#Suggestions-container h2{
+    line-height: 300%;
+    color: white;
+}
+#Comment-container{
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #D6E4E5;
+}
+#Comments{
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background-color: white;
+}
+#accept-reject-container{
+    width: 100%;
+    height: 30%;
+}
+.RIST-CDRR-Model > p{
+    line-height: 35px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.Accept-button{
+    padding: 10px;
+    position: relative;
+    left: 15%;
+    top: 20%;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 8px;
+}
+.Reject-button{
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    top: 20%;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 8px;
+}
+.Accept-button:hover{
+    cursor: pointer;
+    background-color:#ADE792;
+    transition: 0.4s;
+}
+.Reject-button:hover{
+    cursor: pointer;
+    background-color: #F24C3D;
+    transition: 0.4s;
+}
+/* .RIST-CDRR-Model */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .Stove-Optimization */
+.Stove-Optimization{
+    width: 33%;
+    height: 55%;
+    display: inline-block;
+    position: relative;
+    top: -4.5%;
+    left: 4%;
+}
+#Top-Stove{
+    padding: 20px;
+    width: 100%;
+    height: 25%;
+    background-color: #FEFF86;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+#Middle-Stove{
+    padding: 20px;
+    width: 100%;
+    height: 25%;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 8px;
+}
+#Bottom-Stove{
+    padding: 20px;
+    width: 100%;
+    height: 25%;
+    background-color: #FEFF86;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.stove-container{
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+}
+.stove{
+    width: 39%;
+    height: 35%;
+    background-color: #F24C3D;
+    border-radius: 10px;
+    position: relative;
+    left: 30%;
+    top: -10%;
+}
+.HBT{
+    width: 45%;
+    height: 35%;
+    background-color: #ADE792;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    top: 20%;
+    left: -5%;
+}
+.status{
+    width: 52%;
+    height: 35%;
+    display: inline-block;
+    background-color:#A1C2F1;
+    border-radius: 10px;
+    position: relative;
+    top: 28%;
+    right: -2.5%;
+}
+.stove-container h2{
+    line-height: 40px;
+    text-align: left;
+    padding-left: 20px;
+}
+.Stove-Optimization > p{
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+/* .Stove-Optimization */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .alerts */
+.alerts{
+    width: 100%;
+    height: 22%;
+    border: 5px solid pink;
+    position: relative;
+    top: -25.5%;
+}
+/* .alerts */
